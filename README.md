@@ -1,1 +1,1 @@
-# JavaScript-Billing-System
+# JavaScript-GstCalculator
