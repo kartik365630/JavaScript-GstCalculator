@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gst Calculater</title>
+</head>
+<script>
+    function gst(){
+        var a = myform.text1.value
+         var b = myform.text2.value
+         var c = parseInt(a) * parseInt(b)/100
+         var d = parseInt(a) + parseInt(c)
+         
+         myform .text4.value = + a
+         myform.text3.value = +c
+         myform.text5.value = d
+    }
+</script>
+<body><center>
+    <form id="myform">
+        Enter your amount : <input type="number" name="text1"/><br><br>
+        Select Gst:<select name="text2">
+            <option>5%</option>
+            <option>12%</option>
+            <option>18%</option>
+            <option>28%</option>
+        </select><br><br>
+        <button onclick="gst()"type="button"> Calculate Gst</button><br><br>
+
+        amount :<input type="text" name="text4"/><br><br>
+        
+        Gst  : <input type="text" name="text3"/><br><br>
+
+        Total :<input type="text" name="text5"/>
+
+
+        
+    </form>
+</center>
+</body>
+</html> 
